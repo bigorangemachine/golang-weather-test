@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "golang":"echo \"GO PACKAGES\"; go get golang.org/x/text/runes && go get golang.org/x/text/transform && go get golang.org/x/text/unicode/norm",
-    "start": "npm run start-datasource; (node index.js && npm run stop-datasource)",
+    "start": "npm run start-datasource; (npm run http-server && npm run stop-datasource)",
     "uninstall": "node uninstall.js && rm -rf _cache/ && npm run stop-datasource",
     "install": "mkdir -p _cache/ && chmod 777 _cache/ && npm run golang && node install.js",
     "postinstall": "npm run build",
     "start-datasource": "echo \"START DATASOURCE\" && go run golang/server.go >> _cache/data-go-$(date \"+%Y%m%d--%H0000\").log &",
-    "stop-datasource": "pkill -f 'golang/server.go'; echo \"STOPPED DATASOURCE\"",
+    "stop-datasource": "(kill $(lsof -i :9500 -s TCP:LISTEN -n -P | awk '{print $2}')) > /dev/null; echo \"STOPPED DATASOURCE\"",
+
     "http-server": "node http-server.js > http-server.log",
     "coverage": "babel-cli ./node_modules/.bin/isparta cover --include 'src/**/*.js*' _mocha",
     "test": "cross-env NODE_ENV=test nyc mocha-webpack --require babel-core/register --webpack-config webpack.config.js \"pkg/**/*.test.jsx\" --require jsdom-global/register",

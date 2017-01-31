@@ -1,3 +1,10 @@
+/_cache
+http-server.log
+www-assets/css/css.css
+www-assets/css/css.css.map
+www-assets/js/bundle.js
+www-assets/js/bundle.js.map
+
 # Logs
 logs
 *.log

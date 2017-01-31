@@ -1,0 +1,16 @@
+{
+  "require": [
+    "babel-core/register"
+  ],
+  "extension": [
+    ".jsx",
+    ".js"
+  ],
+  "reporter": [
+    "lcov",
+    "html"
+  ],
+  "sourceMap": false,
+  "instrument": false,
+  "report-dir": "./test-coverage"
+}

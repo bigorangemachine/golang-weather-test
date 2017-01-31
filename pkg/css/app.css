@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'HN-Hv';
+	src: url('../fonts/HN-Hv/HN-Hv.eot');
+	src: url('../fonts/HN-Hv/HN-Hv.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HN-Hv/HN-Hv.woff') format('woff'),
+		url('../fonts/HN-Hv/HN-Hv.otf') format('opentype'),
+		url('../fonts/HN-Hv/HN-Hv.svg#HN-Hv') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'HN-Bold';
+	src: url('../fonts/HN-Bold/HN-Bold.eot');
+	src: url('../fonts/HN-Bold/HN-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HN-Bold/HN-Bold.woff') format('woff'),
+		url('../fonts/HN-Bold/HN-Bold.otf') format('opentype'),
+		url('../fonts/HN-Bold/HN-Bold.svg#HN-Bold') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'HN-Md';
+	src: url('../fonts/HN-Md/HN-Md.eot');
+	src: url('../fonts/HN-Md/HN-Md.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HN-Md/HN-Md.woff') format('woff'),
+		url('../fonts/HN-Md/HN-Md.otf') format('opentype'),
+		url('../fonts/HN-Md/HN-Md.svg#HN-Md') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'HN-Roman';
+	src: url('../fonts/HN-Roman/HN-Roman.eot');
+	src: url('../fonts/HN-Roman/HN-Roman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HN-Roman/HN-Roman.woff') format('woff'),
+		url('../fonts/HN-Roman/HN-Roman.otf') format('opentype'),
+		url('../fonts/HN-Roman/HN-Roman.svg#HN-Roman') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+
+html{
+    /* REM READY */
+    font-size:10px;
+    font-family: 'HN-Roman', Arial, sans-serif;
+}
+body{
+    height:100%;
+    width:100%;
+    font-size:3rem;
+    line-height:1;
+}
